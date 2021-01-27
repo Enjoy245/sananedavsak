@@ -1,0 +1,830 @@
+footer p {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+}
+
+.border {
+  border: 3px solid black;
+}
+
+.bilgi {
+  font-size: 20px;
+}
+
+.dropbtn {
+  background-color: #4CAF50;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  border-radius: 15px;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+.dropdown:hover .dropbtn {
+  background-color: #3e8e41;
+}
+
+.kodcular textarea {
+  width: 75%;
+  height: 500px;
+  padding: 12px 20px;
+  box-sizing: border-box;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  background-color: #f8f8f8;
+  resize: none;
+}
+
+.kodcular input[type="text"] {
+  width: 75%;
+  padding: 12px 20px;
+  box-sizing: border-box;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  background-color: #f8f8f8;
+  resize: none;
+}
+
+.kodcular select {
+  width: 75%;
+  padding: 12px 20px;
+  box-sizing: border-box;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  background-color: #f8f8f8;
+  resize: none;
+}
+
+.buton {
+  width: 20%;
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  float: right;
+}
+
+.rate {
+  float: left;
+  height: 46px;
+  padding: 0 10px;
+}
+.rate:not(:checked) > input {
+  position: absolute;
+  top: -9999px;
+}
+.rate:not(:checked) > label {
+  float: right;
+  width: 1em;
+  overflow: hidden;
+  white-space: nowrap;
+  cursor: pointer;
+  font-size: 30px;
+  color: #ccc;
+}
+.rate:not(:checked) > label:before {
+  content: "★ ";
+}
+.rate > input:checked ~ label {
+  color: #ffc700;
+}
+.rate:not(:checked) > label:hover,
+.rate:not(:checked) > label:hover ~ label {
+  color: #deb217;
+}
+.rate > input:checked + label:hover,
+.rate > input:checked + label:hover ~ label,
+.rate > input:checked ~ label:hover,
+.rate > input:checked ~ label:hover ~ label,
+.rate > label:hover ~ input:checked ~ label {
+  color: #c59b08;
+}
+
+.btnred {
+  background-color: red; /*buton rengi*/
+  border: 2px solid red; /*buton kenar rengi*/
+  color: white; /*buton icindeki yazi rengi*/
+  border-radius: 0.6em; /*buton kenarlari*/
+  line-height: 1; /*buton alt uzunluk*/
+  padding: 1.2em 2.8em; /*buton boyutu*/
+  font-family: "Montserrat", sans-serif; /*buton icindeki yazi stili*/
+  font-weight: 700; /*buton icindeki yazi kalinligi*/
+}
+
+.btnblue {
+  background-color: #17E5F4; /*buton rengi*/
+  border: 2px solid #17E5F4; /*buton kenar rengi*/
+  color: white; /*buton icindeki yazi rengi*/
+  border-radius: 0.6em; /*buton kenarlari*/
+  line-height: 1; /*buton alt uzunluk*/
+  padding: 1.2em 2.8em; /*buton boyutu*/
+  font-family: "Montserrat", sans-serif; /*buton icindeki yazi stili*/
+  font-weight: 700; /*buton icindeki yazi kalinligi*/
+}
+
+.btnyellow {
+  background-color: #D2DB22; /*buton rengi*/
+  border: 2px solid #D2DB22; /*buton kenar rengi*/
+  color: white; /*buton icindeki yazi rengi*/
+  border-radius: 0.6em; /*buton kenarlari*/
+  line-height: 1; /*buton alt uzunluk*/
+  padding: 1.2em 2.8em; /*buton boyutu*/
+  font-family: "Montserrat", sans-serif; /*buton icindeki yazi stili*/
+  font-weight: 700; /*buton icindeki yazi kalinligi*/
+}
+
+.btngreen {
+  background-color: #1AEF2A; /*buton rengi*/
+  border: 2px solid #1AEF2A; /*buton kenar rengi*/
+  color: white; /*buton icindeki yazi rengi*/
+  border-radius: 0.6em; /*buton kenarlari*/
+  line-height: 1; /*buton alt uzunluk*/
+  padding: 1.2em 2.8em; /*buton boyutu*/
+  font-family: "Montserrat", sans-serif; /*buton icindeki yazi stili*/
+  font-weight: 700; /*buton icindeki yazi kalinligi*/
+}
+
+.btnorange {
+  background-color: #E3731E; /*buton rengi*/
+  border: 2px solid #E3731E; /*buton kenar rengi*/
+  color: white; /*buton icindeki yazi rengi*/
+  border-radius: 0.6em; /*buton kenarlari*/
+  line-height: 1; /*buton alt uzunluk*/
+  padding: 1.2em 2.8em; /*buton boyutu*/
+  font-family: "Montserrat", sans-serif; /*buton icindeki yazi stili*/
+  font-weight: 700; /*buton icindeki yazi kalinligi*/
+}
+
+.btnmor {
+  background-color: #7284D4; /*buton rengi*/
+  border: 2px solid #7284D4; /*buton kenar rengi*/
+  color: white; /*buton icindeki yazi rengi*/
+  border-radius: 0.6em; /*buton kenarlari*/
+  line-height: 1; /*buton alt uzunluk*/
+  padding: 1.2em 2.8em; /*buton boyutu*/
+  font-family: "Montserrat", sans-serif; /*buton icindeki yazi stili*/
+  font-weight: 700; /*buton icindeki yazi kalinligi*/
+}
+
+.btnkoyumavi {
+  background-color: #4C5DD8; /*buton rengi*/
+  border: 2px solid #4C5DD8; /*buton kenar rengi*/
+  color: white; /*buton icindeki yazi rengi*/
+  border-radius: 0.6em; /*buton kenarlari*/
+  line-height: 1; /*buton alt uzunluk*/
+  padding: 1.2em 2.8em; /*buton boyutu*/
+  font-family: "Montserrat", sans-serif; /*buton icindeki yazi stili*/
+  font-weight: 700; /*buton icindeki yazi kalinligi*/
+  
+}
+
+.btnfistikyesili {
+  background-color: #ABDD30; /*buton rengi*/
+  border: 2px solid #ABDD30; /*buton kenar rengi*/
+  color: white; /*buton icindeki yazi rengi*/
+  border-radius: 0.6em; /*buton kenarlari*/
+  line-height: 1; /*buton alt uzunluk*/
+  padding: 1.2em 2.8em; /*buton boyutu*/
+  font-family: "Montserrat", sans-serif; /*buton icindeki yazi stili*/
+  font-weight: 700; /*buton icindeki yazi kalinligi*/
+
+}
+
+.btnpembe{
+  background-color: #F47FFF; /*buton rengi*/
+  border: 2px solid #F47FFF; /*buton kenar rengi*/
+  color: white; /*buton icindeki yazi rengi*/
+  border-radius: 0.6em; /*buton kenarlari*/
+  line-height: 1; /*buton alt uzunluk*/
+  padding: 1.2em 2.8em; /*buton boyutu*/
+  font-family: "Montserrat", sans-serif; /*buton icindeki yazi stili*/
+  font-weight: 700; /*buton icindeki yazi kalinligi*/
+}
+
+
+.btninstagram{
+  background-color: #F31C5E; /*buton rengi*/
+  border: 2px solid #F31C5E; /*buton kenar rengi*/
+  color: white; /*buton icindeki yazi rengi*/
+  border-radius: 0.6em; /*buton kenarlari*/
+  line-height: 1; /*buton alt uzunluk*/
+  padding: 1.2em 2.8em; /*buton boyutu*/
+  font-family: "Montserrat", sans-serif; /*buton icindeki yazi stili*/
+  font-weight: 700; /*buton icindeki yazi kalinligi*/
+}
+
+
+.btnfacebook{
+  background-color: #1877F3; /*buton rengi*/
+  border: 2px solid #1877F3; /*buton kenar rengi*/
+  color: white; /*buton icindeki yazi rengi*/
+  border-radius: 0.6em; /*buton kenarlari*/
+  line-height: 1; /*buton alt uzunluk*/
+  padding: 1.2em 2.8em; /*buton boyutu*/
+  font-family: "Montserrat", sans-serif; /*buton icindeki yazi stili*/
+  font-weight: 700; /*buton icindeki yazi kalinligi*/
+}
+
+
+.btntwitter{
+  background-color: #01C1FF; /*buton rengi*/
+  border: 2px solid #01C1FF; /*buton kenar rengi*/
+  color: white; /*buton icindeki yazi rengi*/
+  border-radius: 0.6em; /*buton kenarlari*/
+  line-height: 1; /*buton alt uzunluk*/
+  padding: 1.2em 2.8em; /*buton boyutu*/
+  font-family: "Montserrat", sans-serif; /*buton icindeki yazi stili*/
+  font-weight: 700; /*buton icindeki yazi kalinligi*/
+}
+
+.jsv12{
+  background-color: #864BB4; /*buton rengi*/
+  border: 2px solid #864BB4; /*buton kenar rengi*/
+  color: white; /*buton icindeki yazi rengi*/
+  border-radius: 0.6em; /*buton kenarlari*/
+  line-height: 1; /*buton alt uzunluk*/
+  padding: 1.2em 2.8em; /*buton boyutu*/
+  font-family: "Montserrat", sans-serif; /*buton icindeki yazi stili*/
+  font-weight: 700; /*buton icindeki yazi kalinligi*/
+}
+
+.jsplus{
+  background-color: #9c2a2a; /*buton rengi*/
+  border: 2px solid #9c2a2a; /*buton kenar rengi*/
+  color: white; /*buton icindeki yazi rengi*/
+  border-radius: 0.6em; /*buton kenarlari*/
+  line-height: 1; /*buton alt uzunluk*/
+  padding: 1.2em 2.8em; /*buton boyutu*/
+  font-family: "Montserrat", sans-serif; /*buton icindeki yazi stili*/
+  font-weight: 700; /*buton icindeki yazi kalinligi*/
+}
+
+.jsp{
+  background-color: #879b3e; /*buton rengi*/
+  border: 2px solid #879b3e; /*buton kenar rengi*/
+  color: white; /*buton icindeki yazi rengi*/
+  border-radius: 0.6em; /*buton kenarlari*/
+  line-height: 1; /*buton alt uzunluk*/
+  padding: 1.2em 2.8em; /*buton boyutu*/
+  font-family: "Montserrat", sans-serif; /*buton icindeki yazi stili*/
+  font-weight: 700; /*buton icindeki yazi kalinligi*/
+}
+
+.jsu{
+  background-color: #509545; /*buton rengi*/
+  border: 2px solid #509545; /*buton kenar rengi*/
+  color: white; /*buton icindeki yazi rengi*/
+  border-radius: 0.6em; /*buton kenarlari*/
+  line-height: 1; /*buton alt uzunluk*/
+  padding: 1.2em 2.8em; /*buton boyutu*/
+  font-family: "Montserrat", sans-serif; /*buton icindeki yazi stili*/
+  font-weight: 700; /*buton icindeki yazi kalinligi*/
+}
+
+.jsm{
+  background-color: #4a9c90; /*buton rengi*/
+  border: 2px solid #4a9c90; /*buton kenar rengi*/
+  color: white; /*buton icindeki yazi rengi*/
+  border-radius: 0.6em; /*buton kenarlari*/
+  line-height: 1; /*buton alt uzunluk*/
+  padding: 1.2em 2.8em; /*buton boyutu*/
+  font-family: "Montserrat", sans-serif; /*buton icindeki yazi stili*/
+  font-weight: 700; /*buton icindeki yazi kalinligi*/
+}
+
+.pa{
+  background-color: #a77018; /*buton rengi*/
+  border: 2px solid #a77018; /*buton kenar rengi*/
+  color: white; /*buton icindeki yazi rengi*/
+  border-radius: 0.6em; /*buton kenarlari*/
+  line-height: 1; /*buton alt uzunluk*/
+  padding: 1.2em 2.8em; /*buton boyutu*/
+  font-family: "Montserrat", sans-serif; /*buton icindeki yazi stili*/
+  font-weight: 700; /*buton icindeki yazi kalinligi*/
+}
+
+.ua{
+  background-color: #923b7a; /*buton rengi*/
+  border: 2px solid #923b7a; /*buton kenar rengi*/
+  color: white; /*buton icindeki yazi rengi*/
+  border-radius: 0.6em; /*buton kenarlari*/
+  line-height: 1; /*buton alt uzunluk*/
+  padding: 1.2em 2.8em; /*buton boyutu*/
+  font-family: "Montserrat", sans-serif; /*buton icindeki yazi stili*/
+  font-weight: 700; /*buton icindeki yazi kalinligi*/
+}
+
+.ma{
+  background-color: #2e3483; /*buton rengi*/
+  border: 2px solid #2e3483; /*buton kenar rengi*/
+  color: white; /*buton icindeki yazi rengi*/
+  border-radius: 0.6em; /*buton kenarlari*/
+  line-height: 1; /*buton alt uzunluk*/
+  padding: 1.2em 2.8em; /*buton boyutu*/
+  font-family: "Montserrat", sans-serif; /*buton icindeki yazi stili*/
+  font-weight: 700; /*buton icindeki yazi kalinligi*/
+}
+
+.input-group.md-form.form-sm.form-1 input{
+  border: 1px solid #bdbdbd;
+  border-top-right-radius: 0.25rem;
+  border-bottom-right-radius: 0.25rem;
+}
+.input-group.md-form.form-sm.form-2 input {
+  border: 1px solid #bdbdbd;
+  border-top-left-radius: 0.25rem;
+  border-bottom-left-radius: 0.25rem;
+}
+.input-group.md-form.form-sm.form-2 input.red-border {
+  border: 1px solid #ef9a9a;
+}
+.input-group.md-form.form-sm.form-2 input.lime-border {
+  border: 1px solid #cddc39;
+}
+.input-group.md-form.form-sm.form-2 input.amber-border {
+  border: 1px solid #ffca28;
+}
+
+
+
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+
+* {
+	box-sizing: border-box;
+}
+
+h3 {
+	margin: 10px 0;
+}
+
+h6 {
+	margin: 5px 0;
+	text-transform: uppercase;
+}
+
+p {
+	font-size: 14px;
+	line-height: 21px;
+}
+
+
+.card-container {
+	background-color: #231E39;
+	border-radius: 5px;
+	box-shadow: 0px 10px 20px -10px rgba(0,0,0,0.75);
+	color: #B3B8CD;
+	padding-top: 30px;
+	position: relative;
+	width: 350px;
+	max-width: 100%;
+	text-align: center;
+}
+
+.card-container .pro {
+	color: #231E39;
+	background-color: #FEBB0B;
+	border-radius: 3px;
+	font-size: 14px;
+	font-weight: bold;
+	padding: 3px 7px;
+	position: absolute;
+	top: 30px;
+	left: 30px;
+}
+
+.card-container .round {
+	border: 1px solid #03BFCB;
+	border-radius: 50%;
+	padding: 7px;
+}
+
+button.primary {
+	background-color: #03BFCB;
+	border: 1px solid #03BFCB;
+	border-radius: 3px;
+	color: #231E39;
+	font-family: Montserrat, sans-serif;
+	font-weight: 500;
+	padding: 10px 25px;
+}
+
+button.primary.ghost {
+	background-color: transparent;
+	color: #02899C;
+}
+
+.skills {
+	background-color: #1F1A36;
+	text-align: left;
+	padding: 15px;
+	margin-top: 30px;
+}
+
+.skills ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+
+.skills ul li {
+	border: 1px solid #2D2747;
+	border-radius: 2px;
+	display: inline-block;
+	font-size: 12px;
+	margin: 0 7px 7px 0;
+	padding: 7px;
+}
+
+@import url('https://fonts.googleapis.com/css?family=Krub:400,700');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.card {
+  position: absolute;
+  margin: auto;
+   background: #202020;
+  font-family: 'Krub', sans-serif;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: 250px;
+  height: 400px;
+  border-radius: 10px;
+  box-shadow: 0 10px 25px 5px rgba(0, 0, 0, 0.2);
+  background: #151515;
+  overflow: hidden;
+}
+  
+
+.yapimci {
+  color:#00b229;
+}
+
+.botisim {
+  color:#fff;
+}
+
+.kisaaciklama { 
+  color:#fff; 
+}
+
+.davetet {
+  color:#fff;
+}
+
+.destek {
+  color:#fff;
+}
+
+.website {
+  color:#fff;
+}
+
+.botprefix {
+  color:#fff;
+  background-color:grey; 
+}
+
+
+.our-team {
+  padding: 11px 0 11px;
+  width: 230px;
+  height: 267px;
+  border-radius: 20px;
+  margin-bottom: 20px;
+  background-color: white;
+  overflow: hidden;
+  position: relative;
+  float:left
+}
+
+.our-team .picture {
+  height: 100px;
+  width: 100px;
+  z-index: 1;
+  position: relative;
+}
+
+.our-team .picture::before {
+  content: "";
+  width: 100%;
+  height: 0;
+  border-radius: 50%;
+  background-color: #1369ce;
+  position: absolute;
+  bottom: 135%;
+  right: 0;
+  left: 0;
+  opacity: 0.9;
+  transform: scale(3);
+  transition: all 0.3s linear 0s;
+}
+
+.our-team:hover .picture::before {
+  height: 100%;
+}
+
+.our-team .picture::after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background-color: #1369ce;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+.our-team .picture img {
+  width: 100%;
+  height: auto;
+  border-radius: 50%;
+  transform: scale(1);
+  transition: all 0.9s ease 0s;
+}
+
+.our-team:hover .picture img {
+  box-shadow: 0 0 0 14px #f7f5ec;
+  transform: scale(0.7);
+}
+
+.our-team .title {
+  display: block;
+  font-size: 15px;
+  color: #4e5052;
+  text-transform: capitalize;
+}
+
+.our-team .social {
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  background-color: #1369ce;
+  position: absolute;
+  bottom: -100px;
+  left: 0;
+  transition: all 0.5s ease 0s;
+}
+
+.our-team:hover .social {
+  bottom: 0;
+}
+
+.our-team .social li {
+  display: inline-block;
+}
+
+.our-team .social li a {
+  display: block;
+  padding: 10px;
+  font-size: 17px;
+  color: white;
+  transition: all 0.3s ease 0s;
+  text-decoration: none;
+}
+
+.our-team .social li a:hover {
+  color: #1369ce;
+  background-color: #f7f5ec;
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.7);
+  transition: opacity 500ms;
+  visibility: hidden;
+  opacity: 0;
+}
+.overlay:target {
+  visibility: visible;
+  opacity: 1;
+}
+
+.popup {
+  margin: 70px auto;
+  padding: 20px;
+  background-color: #23272a;
+  border-radius: 10px;
+  width: 500px;
+  height: 500px;
+  position: relative;
+  transition: all 5s ease-in-out;
+}
+.tag {
+  font-size: 14px;
+  color: gray;
+}
+.popup h2 {
+  margin-top: -85px;
+  margin-bottom: 14%;
+  margin-left: 19%;
+  position: absolute;
+  color: #fdfafa;
+  font-family: "Whitney", sans-serif;
+  font-size: 18px;
+}
+.popup .close {
+  position: absolute;
+  top: 1px;
+  right: 10px;
+  transition: all 200ms;
+  font-size: 30px;
+  font-weight: bold;
+  text-decoration: none;
+  color: #fff;
+}
+.popup .close:hover {
+  color: red;
+}
+.popup .content {
+  max-height: 30%;
+  overflow: auto;
+  text-align: right;
+}
+
+@media screen and (max-width: 480px) {
+  .box {
+    width: 70%;
+    height: auto;
+  }
+  hr.fot {
+    display: none;
+  }
+  .popup {
+    width: 70%;
+    height: auto;
+    text-align: center !important;
+  }
+  #client_logos {
+    background-color: #fff !important;
+    border-radius: 2em;
+    line-height: 1px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin-left: -75px;
+    margin-top: -80px;
+  }
+  .discord {
+    background: #43b581 !important;
+    text-transform: uppercase;
+    font-size: 13px !important;
+    left: 50%;
+    top: 50%;
+    margin-left: -68px !important;
+    margin-top: 50px !important;
+  }
+  .discord:hover {
+    opacity: 0.8;
+  }
+  .fotnot {
+    margin-top: 70px;
+    padding-top: 15px;
+    text-align: center;
+  }
+  .popup h2 {
+    margin: auto;
+    position: absolute;
+    top: 170px;
+    left: 0;
+    bottom: 30px;
+    right: 0;
+    font-size: 17px;
+    text-align: center !important;
+  }
+}
+
+.discord {
+  font-size: 1em;
+  padding: 7px;
+  background-color: #7289da;
+  color: #fff;
+  border: 1px solid transparent;
+  border-radius: 5px;
+  text-decoration: none;
+  font-family: "Whitney", sans-serif;
+  cursor: pointer;
+  transition: all 0.3s ease-out;
+  text-align: center;
+  margin-top: -92px;
+  margin-left: -152px;
+  position: absolute;
+}
+.discord:hover {
+  transform: translateY(4px);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+}
+.discord:before {
+  font-family: FontAwesome;
+  content: "\f0ea";
+  display: inline-block;
+  padding-right: 3px;
+  vertical-align: middle;
+}
+.fotnot {
+  font-size: 12px;
+  color: #96a2b2;
+  font-family: "Whitney", sans-serif;
+}
+
+.center {
+  position: absolute;
+  left: 50%;
+  top: 61%;
+  margin-left: -5%;
+  margin-top: -5%;
+}
+
+#client_logos {
+  background-color: transparent;
+  display: inline-block;
+  width: 150px;
+}
+hr.fot {
+  border: 0;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+  width: 100%;
+  position: absolute;
+  margin-left: -20px !important;
+}
+.tooltip {
+  position: relative;
+  display: inline-block;
+  border-bottom: 0px dotted black;
+}
+
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 150px;
+  height: 20px;
+  line-height: 12px;
+  padding: 6px !important;
+  background-color: black;
+  color: #fff;
+  font-size: 12px;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+  position: absolute;
+  z-index: 1;
+  bottom: 150%;
+  left: 50%;
+  margin-left: -60px;
+  font-family: "Whitney", sans-serif;
+}
+
+.tooltip .tooltiptext::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -25px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: black transparent transparent transparent;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+}
